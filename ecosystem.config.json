@@ -1,0 +1,16 @@
+[
+  {
+    "name": "PARKING ENEO KOUMASSI>SIEGE>DOUALA",
+    "script": "./app.js",
+    "instances": 1,
+    "autorestart": true,
+    "max_restarts": 10,
+    "exec_mode": "fork",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": "5000",
+      "AOI": "{\"id\":1,\"name\":\"1172\",\"areaId\":[{\"id\":134,\"name\":\"PARKING ENEO KOUMASSI>SIEGE>DOUALA\",\"latitude\":4.03504371079701,\"longitude\":9.69127403802873,\"meta_data\":\"[[4.035043710300245,9.690373490466094],[4.035821674529465,9.690823763816104],[4.035821674529465,9.691724312241348],[4.035043710300245,9.692174585591358],[4.03426574681617,9.691724311378792],[4.03426574681617,9.69082376467866],[4.035043710300245,9.690373490466094],[4.035043710300245,9.690373490466094]]\"}],\"uniqueDeviceId\":[{\"id\":1795,\"name\":\"ENEO_FORD/FORD EVEREST/LT 617 KQ\",\"location\":\"it_352914090645702\"},{\"id\":1797,\"name\":\"ENEO_/ISUZU/M160TP9/LT 775 KI\",\"location\":\"it_352914090150240\"},{\"id\":1760,\"name\":\"ENEO_FORD/ RANGER/LT 845 JZ\",\"location\":\"it_352914090145158\"}]}",
+      "AOI_ID": 134
+    }
+  }
+]

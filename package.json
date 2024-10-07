@@ -1,0 +1,31 @@
+{
+  "name": "api-geofence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@turf/turf": "^7.0.0",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "bull": "^4.16.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^3.3.2",
+    "pg": "^8.11.5",
+    "proper-lockfile": "^4.1.2",
+    "redis": "^4.6.14",
+    "request": "^2.88.2",
+    "socket.io": "^4.7.5",
+    "user-service": "file:",
+    "ws": "^8.17.0"
+  }
+}
