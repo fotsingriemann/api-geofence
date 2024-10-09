@@ -159,7 +159,7 @@ const checkLocation = async (uniqueId, aoiId, token) => {
                 pluscode: latestLocation.timestamp,
                 vehiclenumber: uniqueId,
             };
-            await postDataToOdoo('https://dev.metuaa.com/api/create/alert', jsonData);
+            await postDataToOdoo('https://dev.support.africasystems.com/api/create/alert', jsonData);
             await logDeviceEvent(uniqueId, aoiId, logMessage);
             await redisClient.set(`deviceState:${uniqueId}:${aoiId}`, JSON.stringify(isInside));
         } else if (previousState !== null && JSON.parse(previousState) !== isInside) {
@@ -184,7 +184,7 @@ const checkLocation = async (uniqueId, aoiId, token) => {
                 fromTimestamp: latestLocation.timestamp,
 
             };
-            await updateDataToOdoo('https://dev.metuaa.com/api/update/alert', jsonData);
+            await updateDataToOdoo('https://dev.support.africasystems.com/api/update/alert', jsonData);
             // Enregistrement de la sortie de la zone ou changement d'état
             await logDeviceEvent(uniqueId, aoiId, logMessage);
             await redisClient.set(`deviceState:${uniqueId}:${aoiId}`, JSON.stringify(isInside));

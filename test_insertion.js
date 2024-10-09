@@ -4,9 +4,8 @@ const axios = require("axios");
 const redis = require('redis');
 const fs = require('fs');
 
-const API_KEY = 'PU0KS5ZB2QWTHXEWH0XHQ1NK0286S6UL';
-const TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbiI6ImFkbWluQGFkbWluLmNvbSIsInVpZCI6Mn0.NeEjvgLV6Iac6_BbozO3EG-YYbvWF5pmlhCtwHv6aW4'
-const ODOO_URL = 'https://dev.metuaa.com';
+
+const ODOO_URL = 'https://dev.support.africasystems.com';
 const REDIS_SERVER = 'redis://79.143.185.100:6379';
 
 // Vérifier que REDIS_SERVER est défini
@@ -31,8 +30,8 @@ const redisClient = createRedisClient(REDIS_SERVER);
 // Configuration de la connexion
 const client = new Client({
   user: 'odoo', // replace with your database user
-  host: '20.197.13.34', // replace with your database host
-  database: 'metua_erp_db', // replace with your database name
+  host: '20.197.12.183', // replace with your database host
+  database: 'support_erp_db', // replace with your database name
   password: '21OxGK0ml6UNNDJylyitaJqbYowmYIAgsXA4HDb4', // replace with your database password
   port: 5432, // default PostgreSQL port
 });

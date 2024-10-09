@@ -1,16 +1,1 @@
-[
-  {
-    "name": "PARKING ENEO BALI SDSUR>DSUR>DOUALA",
-    "script": "./app.js",
-    "instances": 1,
-    "autorestart": true,
-    "max_restarts": 10,
-    "exec_mode": "fork",
-    "env": {
-      "NODE_ENV": "development",
-      "PORT": "5000",
-      "AOI": "{\"id\":1,\"name\":\"1172\",\"areaId\":[{\"id\":99,\"name\":\"PARKING ENEO BALI SDSUR>DSUR>DOUALA\",\"latitude\":4.03717141386922,\"longitude\":9.69224984788513,\"meta_data\":\"[[4.0371714137449635,9.691799572923966],[4.037560395766483,9.692024710296664],[4.037560395766483,9.692474985473588],[4.0371714137449635,9.692700122846286],[4.036782431909829,9.692474985257833],[4.036782431909829,9.692024710512419],[4.0371714137449635,9.691799572923966]]\"}],\"uniqueDeviceId\":[{\"id\":1795,\"name\":\"ENEO_FORD/FORD EVEREST/LT 617 KQ\",\"location\":\"it_352914090645702\"},{\"id\":1797,\"name\":\"ENEO_/ISUZU/M160TP9/LT 775 KI\",\"location\":\"it_352914090150240\"},{\"id\":1760,\"name\":\"ENEO_FORD/ RANGER/LT 845 JZ\",\"location\":\"it_352914090145158\"}]}",
-      "AOI_ID": 99
-    }
-  }
-]
+[]
