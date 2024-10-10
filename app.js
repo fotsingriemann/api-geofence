@@ -5,7 +5,7 @@ const redis = require('redis');
 require('dotenv').config();
 
 // URL de votre serveur GraphQL
-const GRAPHQL_URL = "https://api.lewootrack.com";
+const GRAPHQL_URL = "https://api.dev.eneotransportation.com";
 const REDIS_URL = process.env.REDIS_URL || 'redis://localhost:6379';
 
 // Configuration des données d'aire
