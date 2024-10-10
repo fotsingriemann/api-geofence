@@ -5,7 +5,7 @@ const redis = require('redis');
 require('dotenv').config();
 
 // URL de votre serveur GraphQL
-const GRAPHQL_URL = "https://api.dev.eneotransportation.com";
+const GRAPHQL_URL = process.env.GRAPHQL_URL;
 const REDIS_URL = process.env.REDIS_URL || 'redis://localhost:6379';
 
 // Configuration des données d'aire
@@ -139,7 +139,7 @@ const checkLocation = async (uniqueId, aoiId, token) => {
 
         // Log message to indicate point entry or exit
         const logMessage = `Device ${uniqueId}: Point ${isInside ? 'entered' : 'exited'} geofence at ${coordinates[1]},${coordinates[0]} in ${aoi_name}`;
-        console.log(logMessage)
+
         if (previousState === null && isInside) {
             // Enregistrement de l'entrée dans la zone
             let jsonData = {
@@ -214,7 +214,7 @@ const initialCheckLocations = async (deviceIds, token) => {
 
 const main = async () => {
     try {
-        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbklkIjoxMTE3LCJ1c2VybmFtZSI6ImFmcmljdHJhY2siLCJyb2xlcyI6IkNMSUVOVCIsImlhdCI6MTcyODA0MTk4M30.Om6mPpC79R71T27Vng5H-aqpaZUVRUdeJuNUGtoRKMk"
+        const token = process.env.TOKEN
 
         // Vérification initiale des dispositifs
         await initialCheckLocations(uniqueDeviceIds, token);
