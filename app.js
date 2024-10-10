@@ -5,7 +5,7 @@ const redis = require('redis');
 require('dotenv').config();
 
 // URL de votre serveur GraphQL
-const GRAPHQL_URL = process.env.GRAPHQL_URL;
+const GRAPHQL_URL = "https://api.eneotransportation.com";
 const REDIS_URL = process.env.REDIS_URL || 'redis://localhost:6379';
 
 // Configuration des données d'aire
@@ -214,7 +214,7 @@ const initialCheckLocations = async (deviceIds, token) => {
 
 const main = async () => {
     try {
-        const token = process.env.TOKEN
+        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbklkIjoxMTE3LCJ1c2VybmFtZSI6ImFmcmljdHJhY2siLCJyb2xlcyI6IkNMSUVOVCIsImlhdCI6MTcyODA0MTk4M30.Om6mPpC79R71T27Vng5H-aqpaZUVRUdeJuNUGtoRKMk"
 
         // Vérification initiale des dispositifs
         await initialCheckLocations(uniqueDeviceIds, token);
