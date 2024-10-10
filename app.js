@@ -139,7 +139,7 @@ const checkLocation = async (uniqueId, aoiId, token) => {
 
         // Log message to indicate point entry or exit
         const logMessage = `Device ${uniqueId}: Point ${isInside ? 'entered' : 'exited'} geofence at ${coordinates[1]},${coordinates[0]} in ${aoi_name}`;
-
+        console.log(logMessage)
         if (previousState === null && isInside) {
             // Enregistrement de l'entrée dans la zone
             let jsonData = {
