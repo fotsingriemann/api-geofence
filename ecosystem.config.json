@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "name": "PARKING ENEO BALI SDSUR>DSUR>DOUALA",
+    "script": "./app.js",
+    "instances": 1,
+    "autorestart": true,
+    "max_restarts": 10,
+    "exec_mode": "fork",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": "5000",
+      "AOI": "{\"id\":23,\"name\":\"1172\",\"areaId\":[{\"id\":98,\"name\":\"PARKING ENEO BALI SDSUR>DSUR>DOUALA\",\"latitude\":4.03717141386922,\"longitude\":9.69224984788513,\"meta_data\":\"[[4.0371714137449635,9.691799572923966],[4.037560395766483,9.692024710296664],[4.037560395766483,9.692474985473588],[4.0371714137449635,9.692700122846286],[4.036782431909829,9.692474985257833],[4.036782431909829,9.692024710512419],[4.0371714137449635,9.691799572923966]]\"}],\"uniqueDeviceId\":[{\"id\":537,\"name\":\"TOYOTA/HIACE 2986CC DSL 15 L (LH202L-REMDE 01/LT 124 KF\",\"location\":false},{\"id\":1063,\"name\":\"/ISUZU/M160TP9/LT 775 KI\",\"location\":false}]}",
+      "AOI_ID": 98
+    }
+  },
+  {
+    "name": "CCR d'Essos",
+    "script": "./app.js",
+    "instances": 1,
+    "autorestart": true,
+    "max_restarts": 10,
+    "exec_mode": "fork",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": "5001",
+      "AOI": "{\"id\":24,\"name\":\"1172\",\"areaId\":[{\"id\":187,\"name\":\"CCR d'Essos\",\"latitude\":3.876841,\"longitude\":11.54504,\"meta_data\":\"[[3.881841, 11.54504], [3.879341, 11.549370127018923], [3.8743410000000003, 11.549370127018923], [3.8718410000000003, 11.54504], [3.8743410000000003, 11.540709872981077], [3.879341, 11.540709872981077]]\"}],\"uniqueDeviceId\":[]}",
+      "AOI_ID": 187
+    }
+  }
+]
